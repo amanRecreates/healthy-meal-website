@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="item.css">
+    <title>Healthy Meal - Item</title>
+    <script src="https://kit.fontawesome.com/6bea53be50.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gsap/1.19.1/TweenMax.min.js"></script>
+</head>
+
+<body>
+    <img src="data/item/Asset%201@2x.png" class="firstbg">
+    <div class="grid-container1 gc">
+
+        <div class="item1">
+            <div class="logo">
+                <img src="data/item/Asset%20169@2x.png" class="logo_img">
+            </div>
+            <div class="detail">
+                <div class="num">3</div>
+                <div class="name">Palak Paneer</div>
+                <div class="desc">Cumcumber and Hydrating</div>
+            </div>
+            <div class="atc">
+                <button class="button">
+                    <span>Add to Cart</span>
+                    <div class="cart">
+                        <svg viewBox="0 0 36 26">
+                            <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                            <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="item2">
+
+        </div>
+        <div class="item3">
+            <a href="meal.html" class="back">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <div class="image">
+                <img src="data/item/knk.png">
+                <img src="data/item/boo1.png" class="bo">
+            </div>
+        </div>
+    </div>
+    <div class="grid-container2 gc">
+        <div class="item4">
+            <div class="feed">
+                Hear What our Customer Say ?
+            </div>
+        </div>
+        <div class="item5">
+            <div class="hor">
+                <div class="slider-wrap">
+                    <div id="card-slider" class="slider">
+                      <div class="slider-item">
+                            <div class="animation-card_image">
+                                <img src="data/item/Asset%20184@2x.png" alt="">
+                            </div>
+                            <div class="animation-card_content">
+                                <h4 class="animation-card_content_title title-2">Midhun Nagababu</h4>
+                                <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
+                                <p class="animation-card_content_city">Nice Behaviour</p>
+                            </div>
+                        </div>
+                       
+                        <div class="slider-item">
+                            <div class="animation-card_image">
+                                <img src="data/item/Asset%20185@2x.png" alt="">
+                            </div>
+                            <div class="animation-card_content">
+                                <h4 class="animation-card_content_title title-2">Aman Shrivastava</h4>
+                                <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
+                                <p class="animation-card_content_city">Yummy and Tasty Food...</p>
+                            </div>
+                        </div>
+                        
+                        <div class="slider-item">
+                            <div class="animation-card_image">
+                                <img src="data/item/Asset%20181@2x.png" alt="">
+                            </div>
+                            <div class="animation-card_content">
+                                <h4 class="animation-card_content_title title-2">Swathi Vennela</h4>
+                                <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
+                                <p class="animation-card_content_city">Good Food Quality!!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="slider-item">
+                            <div class="animation-card_image">
+                                <img src="data/item/Asset%20182@2x.png" alt="">
+                            </div>
+                            <div class="animation-card_content">
+                                <h4 class="animation-card_content_title title-2">Nithin Ramancha</h4>
+                                <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
+                                <p class="animation-card_content_city">Nice Behaviour</p>
+                            </div>
+                        </div>
+                        
+                        <div class="slider-item">
+                            <div class="animation-card_image">
+                                <img src="data/item/Asset%20183@2x.png" alt="">
+                            </div>
+                            <div class="animation-card_content">
+                                <h4 class="animation-card_content_title title-2">Nikhil Kataria</h4>
+                                <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
+                                <p class="animation-card_content_city">Nice Behaviour</p>
+                            </div>
+                        </div>
+                        
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="item6">
+            <img src="data/item/Asset%204@2x.png">
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        document.querySelectorAll('.button').forEach(button => button.addEventListener('click', e => {
+            if (!button.classList.contains('loading')) {
+
+                button.classList.add('loading');
+
+                setTimeout(() => button.classList.remove('loading'), 3700);
+
+            }
+            e.preventDefault();
+        }));
+    </script>
+
+    <script src="item.js"></script>
+
+</body>
+
+</html>

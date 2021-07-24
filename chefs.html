@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="chefs.css">
+    <title>Healthy Meal - Chef</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .mySlides {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container1 gc">
+
+        <div class="item1">
+
+        </div>
+        <div class="item2">
+            <div class="logo">
+                <img src="data/chef/Asset%20169@2x.png" class="logo_img">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a class="active" href="chefs.html">Chefs</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="meal.html">Meals</a></li>
+                </ul>
+            </div>
+            <div class="sign">
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+        <div class="item3">
+            <img src="data/chef/sdf.png">
+        </div>
+        <div class="item10">
+            <div class="head">
+                Our <a href="#here">CHEFS</a>
+            </div>
+            <div class="mid">
+                <p class="type"></p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-container2 gc">
+        <img src="data/chef/Asset%20405@2x.png" class="firstbg">
+        <div id="here" class="item4">
+
+        </div>
+        <div class="item5">
+
+            <div class="people mySlides">
+                <div class="pic">
+                    <img src="data/chef/cc2.png">
+                </div>
+                <div class="desc">
+                    <div class="naam">
+                        Alune Tapunce
+                    </div>
+                    <div class="kaam">
+                        Being involved, learning firsthand and observing the craft and absorbing all you can, makes it easier to define what you want. It will also ultimately make you a better Chef. Culinary school, or even a single class, is a great bet too.
+                    </div>
+
+                </div>
+                <div class="si">
+                    <img src="data/chef/dvd.png">
+                </div>
+            </div>
+
+            <div class="people mySlides">
+                <div class="pic">
+                    <img src="data/chef/cc1.png">
+                </div>
+                <div class="desc">
+                    <div class="naam">
+                        Chunkey Pandey
+                    </div>
+                    <div class="kaam">
+                        I've been a cook all my life, but I am still learning to be a good chef. I'm always learning new techniques and improving beyond my own knowledge because there is always something new to learn and new horizons to discover.
+                    </div>
+
+                </div>
+                <div class="si">
+                    <img src="data/chef/sscs.png">
+                </div>
+            </div>
+
+            <button class="w3-button w3-light-green w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-light-green w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+        </div>
+    </div>
+    <div class="footer">
+        By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. <span>2020 © Healthy Meals™</span> Media Pvt Ltd. All rights reserved.
+    </div>
+
+
+    <script src="typed.js"></script>
+
+    <script>
+        var typed = new Typed(".type", {
+            strings: [
+                "Think Like SCIENTIST",
+                "Organise Like Accountant",
+                "Plate Like Artist",
+                "Cook Like Grandma",
+
+            ],
+            typeSpeed: 80,
+            backDelay: 1000,
+            backSpeed: 30,
+            showCursor: false,
+            loop: true
+        });
+    </script>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>

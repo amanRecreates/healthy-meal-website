@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+/*font-family: 'Monoton', cursive;*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+
+
+@font-face {
+    font-family: 'font_hm';
+    src: url(fonts/HouschkaMedium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'font_hbr';
+    src: url(fonts/HouschkaBold_Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'font_hdb';
+    src: url(fonts/Houschka_Pro_DemiBold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'font_b';
+    src: url(fonts/Benguiab.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'font_Lon1';
+    src: url(fonts/LondrinaSolid-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'font_Lon2';
+    src: url(fonts/LondrinaSolid-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'font_Lon3';
+    src: url(fonts/LondrinaSolid-Thin.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'font_Lon4';
+    src: url(fonts/LondrinaSolid-Black.ttf) format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: font_hm;
+    font-weight: 100;
+    text-decoration: none;
+    color: #777;
+    font-size: 18px;
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    /*    overflow: hidden;*/
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    /*        background: #E6E6E9;*/
+    min-width: 1500px;
+}
+
+
+.item1 {
+    grid-area: i1;
+}
+
+.item2 {
+    grid-area: i2;
+}
+
+.item3 {
+    grid-area: i3;
+}
+
+.gc {
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 1% 0.5%;
+    height: 100%;
+}
+
+.grid-container1 {
+    grid-template-rows: 25% auto auto;
+    grid-template-columns: 20% 79.5%;
+    grid-template-areas:
+        'i1 i2'
+        'i1 i3'
+        'i1 i3';
+    /*    background-color: #151515;*/
+}
+
+.gc > div {
+        background-color: rgba(0, 0, 0, 0.1);
+}
+
+.item1 {
+    background-color: #F4F7F4;
+    box-shadow: 0 0 30px rgba(70, 176, 74, 0.1) inset,
+        15px 15px 15px rgba(70, 176, 74, 0.1) inset;
+}
+
+.item1 .logo {
+    height: 8%;
+    /*    background-color: rgba(0,0,0,0.3);*/
+    position: relative;
+}
+
+.item1 .logo img {
+    width: 60%;
+    position: absolute;
+    top: 20%;
+    left: 16%;
+}
+
+.item1 .user {
+    margin-top: 2%;
+    height: 25%;
+    /*    background-color: rgba(0,0,0,0.6);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10%;
+}
+
+.item1 .user .userimg {
+    width: 30%;
+}
+
+.item1 .user .username {
+    margin-top: 5%;
+    font-size: 20px;
+    font-family: font_hbr;
+    color: #444;
+
+}
+
+.item1 .opt {
+    padding-left: 15%;
+}
+
+.item1 .opt div,
+.item1 .opt a {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    width: 85%;
+    border-radius: 15px;
+}
+
+.item1 .opt a i {
+    color: #999;
+    transition: 0.5s;
+}
+
+.item1 .opt .head {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #999;
+    padding-left: 5%;
+}
+
+.item1 .opt div:nth-child(7),
+.item1 .opt div:nth-child(1) {
+    margin-top: 7%;
+}
+
+.item1 .opt .options {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    cursor: pointer;
+}
+
+.item1 .opt .active {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.item1 .opt .active i {
+    color: #46B04A !important;
+}
+
+.item1 .opt .active .optname {
+    color: #46B04A !important;
+}
+
+.item1 .opt a:hover .optname,
+.item1 .opt a:hover i {
+    color: #555 !important;
+}
+
+.item1 .opt .options .optname {
+    padding-left: 10%;
+    color: #aaa;
+    transition: 0.5s;
+}
+
+.item1 .opt a:nth-child(10) {
+    margin-top: 15%;
+}
+
+.item1 .opt .signout:hover div,
+.item1 .opt .signout:hover i {
+    color: #FF4747 !important;
+}
+
+form {
+    padding: 0 30%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+
+input[type=text], select {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+    margin-bottom: 5%;
+}
+
+input[type=submit] {
+  width: 80%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+

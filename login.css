@@ -1,0 +1,102 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(data/login/2x/Asset%20400.png);
+    background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+    font-family: 'font_hm';
+    src: url(fonts/HouschkaMedium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'font_hbr';
+    src: url(fonts/HouschkaBold Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'font_hdb';
+    src: url(fonts/Houschka Pro DemiBold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'font_b';
+    src: url(fonts/Benguiab.ttf) format("truetype");
+}
+
+ div {
+    position: absolute;
+} 
+
+.icon {
+    /* background-color: aqua; */
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    left: 670px;
+    top: 40px;
+}
+
+ .main {
+    /* background-color: dimgray; */
+    width: 330px;
+    height: 250px;
+    left: 1050px;
+    top: 180px;
+} 
+
+ input[type=text], input[type=password] {
+     outline: none;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+    border: 2px solid white;
+  box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.main .form input:focus {
+    border: 2px solid #CFEE9E;
+}
+
+button {
+  background-image: linear-gradient(to right,#69BF64 ,#29AD78);
+  color: #394032;
+  padding-bottom: 6px;
+    margin-top: 60px;
+  border: none;
+  cursor: pointer;
+  width: 70%;
+  box-sizing: border-box;
+    border-radius: 20px;
+    margin-left: 50px;
+    font-size: 25px;
+    font-family: acumin-pro,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    outline: none;
+}
+
+button:hover {
+    opacity: 0.8;
+} 
+
+.footer {
+    /* background-color: fuchsia; */
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    bottom: 20px;
+    right: 50px;
+}
+
+.footer img {
+    width: 20px;
+    margin-right: 20px;
+}

@@ -1,0 +1,157 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(data/register/2x/Asset%20158@2x.png);
+    background-size: 52%;
+    background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+    font-family: 'font_hm';
+    src: url(fonts/HouschkaMedium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'font_hbr';
+    src: url(fonts/HouschkaBold Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'font_hdb';
+    src: url(fonts/Houschka Pro DemiBold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'font_b';
+    src: url(fonts/Benguiab.ttf) format("truetype");
+}
+
+ div {
+    position: absolute;
+} 
+
+.icon {
+    /* background-color: aqua; */
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    left: 670px;
+    top: 40px;
+}
+
+.box{
+    position: absolute;
+    top: 21%;
+    left: 65%;
+    width: 400px;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: acumin-pro,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.box h2{
+    margin: 0 0 30px;
+    padding: 0px;
+    color: black;
+    font-family: font_b;
+    font-size: 50px;
+}
+
+.box .inputBox{
+    position: relative;
+}
+
+.box .inputBox input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #A9A09F;
+    letter-spacing: 1px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    font-family: acumin-pro,sans-serif;
+    margin-bottom: 10px;
+}
+
+.box .inputBox label{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 10px 0;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #587B7F;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.box .inputBox:nth-child(1) {
+    width: 45%;
+    float: right;
+}
+.box .inputBox:nth-child(2){
+    width: 45%;
+}
+
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label{
+    padding-left: 10px;
+    top: 3px;
+    color: white;
+    z-index: -1;
+    font-size: 12px;
+}
+
+.box .inputBox input:focus ~ label {
+    border-bottom: 2px solid #CFEE9E;
+}
+
+.bold {
+    color: #412312;
+    font-weight: 600;
+}
+
+.box input[type="checkbox"]{
+    position: absolute;
+    left: -40px;
+    height: 20px;
+    top: -3px;
+    width: 30px;
+}
+
+.box input[type="submit"]{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-image: linear-gradient(to right,#69BF64 ,#29AD78);
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 85px;
+    text-align: center;
+    width: 320px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.footer {
+    /* background-color: #287499; */
+    height: 50px;
+    width: 300px;
+    bottom: 0;
+    left: 40px;
+}
+
+.footer img {
+    width: 20px;
+    margin-right: 17px;
+}

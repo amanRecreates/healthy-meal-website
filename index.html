@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Healthy Meal - Home</title>
+    <script src="https://kit.fontawesome.com/6bea53be50.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+</head>
+
+<body>
+    <img src="data/home/2x/neww@2x.png" class="firstbg">
+
+    <div class="grid-container1 gc">
+
+        <div class="item1">
+
+        </div>
+        <div class="item2">
+            <div class="logo">
+                <img src="data/home/2x/Asset%2064@2x.png " class="logo_img">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="chefs.html">Chefs</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="meal.html">Meals</a></li>
+                </ul>
+            </div>
+            <div class="sign">
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+        <div class="item3">
+            <div class="heading">
+                Relish Your Every Meal<br>
+                With A Blend Of Nutrients...
+            </div>
+            <div class="subheading">
+                Feeling Hungry?
+            </div>
+            <div class="button">
+                <a href="meal.html">Order Now</a>
+            </div>
+            <section>
+                <form>
+                    <input type="text" placeholder="Email">
+                    <button type="submit" class="btn first">
+                        <i class="fas fa-envelope"></i>
+                        <span class="start" style="font-size: 23px;">Get a promo code</span>
+                        <span class="done">THANK YOU!</span>
+                    </button>
+                </form>
+            </section>
+        </div>
+        <div class="item4">
+            <img src=" data/home/2x/Asset%2065@2x.png ">
+            <img src=" data/home/2x/Asset%2056@2x.png " class="food">
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var basicTimeline = anime.timeline(),
+                doneTimeline = anime.timeline();
+            var trigger = true;
+
+            $('form .btn').click(function (e) {
+                e.preventDefault();
+                if ($(this).hasClass('first')) {
+                    trigger = false;
+                    $(this).removeClass('first').addClass('active');
+                    basicTimeline
+                        .add({
+                            targets: 'button',
+                            width: 65,
+                            paddingLeft: 17,
+                            paddingRight: 17,
+                            translateX: 97,
+                            scale: 1.2,
+                            duration: 1500
+                        })
+                        .add({
+                            targets: 'form input',
+                            width: 370,
+                            opacity: 1,
+                            duration: 2000,
+                            offset: '-=1500'
+                        })
+                        .add({
+                            targets: 'form button i',
+                            opacity: 1,
+                            translateX: 15,
+                            duration: 2000,
+                            offset: '-=1700',
+                            complete: function (anim) {
+                                trigger = true;
+                            }
+                        })
+                } else if ($(this).hasClass('active') && trigger) {
+                    $(this).removeClass('active').addClass('done');
+                    doneTimeline
+                        .add({
+                            targets: 'button',
+                            translateX: 180,
+                            duration: 1500,
+                            scale: 1.2
+                        })
+                        .add({
+                            targets: 'button i',
+                            opacity: 0,
+                            duration: 1000,
+                            offset: '-=1200'
+                        })
+                        .add({
+                            targets: 'button',
+                            width: 187,
+                            scale: 1.2,
+                            translateX: -23,
+                            duration: 1500,
+                            offset: '-=1000'
+                        })
+                        .add({
+                            targets: 'form input',
+                            width: 0,
+                            translateX: -193,
+                            duration: 1500,
+                            offset: '-=1500'
+                        })
+                        .add({
+                            targets: 'form button .done',
+                            opacity: 1,
+                            duration: 1000,
+                            offset: '-=1500'
+                        })
+                }
+            });
+
+        });
+    </script>
+</body>
+
+</html>
